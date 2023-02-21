@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01testpizza.html</title>
+       
+    <style>
+        *{
+            font-size: 12pt;
+            font-weight: bold;
+        }
+     
+        .pizza input, select{
+            width: 100%;
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+        .phone input {
+            width: 100%;
+            margin-bottom: 5px;
+            padding: 5px;
+        }
+        input[type=submit]{
+            width: 30%;
+            height: 50px;
+            background-color: steelblue;
+            color:white;
+            border: none;
+            margin-left: 35%; 
+            margin-top: 50px;
+            cursor: pointer;
+        }
+        .member{
+            margin: auto;
+            width: 460px;
+        }
+      body{
+        background-color: ;
+        line-height: 1.5em;
+      }
+      fieldset{
+        margin-top: 5px;
+      }
+     .phone {
+            display: flex;
+     }
+     .phone input:nth-child(1){
+    flex:2;
+    }
+
+    .phone input:nth-child(2){
+    flex:1;
+    }
+    .phone input[type=button]{
+        background-color: steelblue;
+        color: white;
+        border:white;
+        cursor: pointer;
+    }
+    .logo {
+        display: block;
+        margin-left: 600px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="./images/pizza1.PNG" alt="">
+    </div>
+<div class="member">
+<form action="">
+    <div class="pizza">
+        <label for="">고객명 : </label>
+        <input type="text" name="" id="" required>
+    </div>
+    <div class="pizza">
+        <label for="">휴대전화 : </label>
+        <select name="" id="">
+            <option value="">대한민국 +82</option>
+        </select>
+    </div>
+    <div class="phone">
+        <input type="tel" name="" id="" placeholder="전화번호 입력">
+        <input type="button" value="인증번호 받기">
+    </div>
+    <div class="phone">
+        <input type="text" class="myphone" placeholder="인증번호를 입력하세요." required>
+    </div>
+    <div class="pizza">
+        <label for="">E-mail : </label>
+        <input type="email" placeholder="선택입력">
+    </div>
+    <div class="pizza">
+        <label for="">주소 : </label>
+        <input type="text" name="" id="" required>
+    </div>
+    <fieldset>
+        <legend>피자사이즈</legend>
+        <input type="radio" name="size" id="">S    
+        <input type="radio" name="size" id="">M
+        <input type="radio" name="size" id="">L
+    </fieldset>
+    <fieldset>
+        <legend>토핑 선택</legend>
+        <input type="checkbox" name="" id="">베이컨
+        <input type="checkbox" name="" id="">새우
+        <input type="checkbox" name="" id="">치즈
+        <input type="checkbox" name="" id="">버섯
+        <input type="checkbox" name="" id="">양파 <br>
+        <input type="checkbox" name="" id="">블랙올리브 
+        <input type="checkbox" name="" id="">페퍼로니
+    </fieldset>
+    <div class="pizza">
+        <label for="">희망배송시간 : </label>
+        <input type="time" name="" id="">
+    </div>
+    <div>
+        <label for="">배송시 요청사항</label> <br>
+        <textarea name="" id="" cols="46" rows="4"></textarea><br>
+    </div>
+    <div>
+        <input type="submit" value="주문하기">
+    </div>
+
+</form>
+    
+</div>
+</body>
+</html>
